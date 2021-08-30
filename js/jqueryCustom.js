@@ -49,26 +49,26 @@ jQuery(window).on('load', function() {
 	// 	submitMSG(true, "Thank you for your submission :)")
 	// }
 
-	function formError(){
+	// function formError(){
 		
-		"use strict";
+	// 	"use strict";
 
-		$("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-			$(this).removeClass();
-		});
-	}
+	// 	$("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	// 		$(this).removeClass();
+	// 	});
+	// }
 
-	function submitMSG(valid, msg){
+	// function submitMSG(valid, msg){
 		
-		"use strict";
+	// 	"use strict";
 
-		if(valid){
-			var msgClasses = "success form-message";
-		} else {
-			var msgClasses = "error form-message";
-		}
-		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-	}
+	// 	if(valid){
+	// 		var msgClasses = "success form-message";
+	// 	} else {
+	// 		var msgClasses = "error form-message";
+	// 	}
+	// 	$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+	// }
 
 
 

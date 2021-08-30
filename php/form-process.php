@@ -4,7 +4,7 @@ $errorMSG = "";
 
 // NAME
 if (empty($_POST["nombre"])) {
-    $errorMSG = "Name is required ";
+    $errorMSG = "";
 } else {
     $name = $_POST["nombre"];
 }
