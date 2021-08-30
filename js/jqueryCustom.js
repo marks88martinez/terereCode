@@ -1,8 +1,8 @@
 jQuery(window).on('load', function() {
 
-	jQuery("#contactForm").validator().on("submit", function (event) {
+	// jQuery("#contactForm").validator().on("submit", function (event) {
 
-		"use strict";
+	// 	"use strict";
 
 		// if (event.isDefaultPrevented()) {
 		// 	// handle the invalid form...
@@ -13,7 +13,7 @@ jQuery(window).on('load', function() {
 		// 	event.preventDefault();
 		// 	submitForm();
 		// }
-	});
+	// });
 
 	// function submitForm(){
 
@@ -41,13 +41,13 @@ jQuery(window).on('load', function() {
 	// 	});
 	// }
 
-	function formSuccess(){
+	// function formSuccess(){
 		
-		"use strict";
+	// 	"use strict";
 
-		$("#contactForm")[0].reset();
-		submitMSG(true, "Thank you for your submission :)")
-	}
+	// 	$("#contactForm")[0].reset();
+	// 	submitMSG(true, "Thank you for your submission :)")
+	// }
 
 	function formError(){
 		
