@@ -1,19 +1,19 @@
 jQuery(window).on('load', function() {
 
-	jQuery("#contactForm").validator().on("submit", function (event) {
+	// jQuery("#contactForm").validator().on("submit", function (event) {
 
-		"use strict";
+	// 	"use strict";
 
-		if (event.isDefaultPrevented()) {
-			// handle the invalid form...
-			formError();
-			submitMSG(false, "Por favor complete todos los campos obligatorios");
-		} else {
-			// everything looks good!
-			event.preventDefault();
-			submitForm();
-		}
-	});
+	// 	if (event.isDefaultPrevented()) {
+	// 		// handle the invalid form...
+	// 		formError();
+	// 		submitMSG(false, "Por favor complete todos los campos obligatorios");
+	// 	} else {
+	// 		// everything looks good!
+	// 		event.preventDefault();
+	// 		submitForm();
+	// 	}
+	// });
 
 	// function submitForm(){
 	// 	"use strict";
@@ -40,34 +40,34 @@ jQuery(window).on('load', function() {
 	// 	});
 	// }
 
-	function formSuccess(){
+	// function formSuccess(){
 		
-		"use strict";
+	// 	"use strict";
 
-		$("#contactForm")[0].reset();
-		submitMSG(true, "Thank you for your submission :)")
-	}
+	// 	$("#contactForm")[0].reset();
+	// 	submitMSG(true, "Thank you for your submission :)")
+	// }
 
-	function formError(){
+	// function formError(){
 		
-		"use strict";
+	// 	"use strict";
 
-		$("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-			$(this).removeClass();
-		});
-	}
+	// 	$("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+	// 		$(this).removeClass();
+	// 	});
+	// }
 
-	function submitMSG(valid, msg){
+	// function submitMSG(valid, msg){
 		
-		"use strict";
+	// 	"use strict";
 
-		if(valid){
-			var msgClasses = "success form-message";
-		} else {
-			var msgClasses = "error form-message";
-		}
-		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-	}
+	// 	if(valid){
+	// 		var msgClasses = "success form-message";
+	// 	} else {
+	// 		var msgClasses = "error form-message";
+	// 	}
+	// 	$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+	// }
 
 
 
