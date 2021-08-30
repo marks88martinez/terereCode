@@ -15,31 +15,30 @@ jQuery(window).on('load', function() {
 		}
 	});
 
-	function submitForm(){
-		
-		"use strict";
+	// function submitForm(){
+	// 	"use strict";
 
-		// Initiate Variables With Form Content
-		var name = $("#name").val();
-		var email = $("#email").val();
-		var tel = $("#tel").val();
-		var sub = $("#sub").val();
-		var message = $("#message").val();
+	// 	// Initiate Variables With Form Content
+	// 	var name = $("#name").val();
+	// 	var email = $("#email").val();
+	// 	var tel = $("#tel").val();
+	// 	var sub = $("#sub").val();
+	// 	var message = $("#message").val();
 
-		$.ajax({
-			type: "POST",
-			url: "/php/form-process.php",
-			data: "name=" + name + "&email=" + email + "&message=" + message + "&tel=" + tel + "&sub=" + sub,
-			success : function(text){
-				if (text == "success"){
-					formSuccess();
-				} else {
-					formError();
-					submitMSG(false,text);
-				}
-			}
-		});
-	}
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "/php/form-process.php",
+	// 		data: "name=" + name + "&email=" + email + "&message=" + message + "&tel=" + tel + "&sub=" + sub,
+	// 		success : function(text){
+	// 			if (text == "success"){
+	// 				formSuccess();
+	// 			} else {
+	// 				formError();
+	// 				submitMSG(false,text);
+	// 			}
+	// 		}
+	// 	});
+	// }
 
 	function formSuccess(){
 		
