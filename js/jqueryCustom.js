@@ -27,7 +27,7 @@ jQuery(window).on('load', function() {
 
 	// 	$.ajax({
 	// 		type: "POST",
-	// 		url: "/php/form-process.php",
+	// 		url: "/php/cess.php",
 	// 		data: "name=" + name + "&email=" + email + "&message=" + message + "&tel=" + tel + "&sub=" + sub,
 	// 		success : function(text){
 	// 			if (text == "success"){
