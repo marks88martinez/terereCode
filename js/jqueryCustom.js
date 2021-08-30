@@ -27,7 +27,7 @@ jQuery(window).on('load', function() {
 
 	// 	$.ajax({
 	// 		type: "POST",
-	// 		url: "/php/cess.php",
+	// 		url: "/php/form-process.php",
 	// 		data: "name=" + name + "&email=" + email + "&message=" + message + "&tel=" + tel + "&sub=" + sub,
 	// 		success : function(text){
 	// 			if (text == "success"){
@@ -40,13 +40,13 @@ jQuery(window).on('load', function() {
 	// 	});
 	// }
 
-	// function formSuccess(){
+	function formSuccess(){
 		
-	// 	"use strict";
+		"use strict";
 
-	// 	$("#contactForm")[0].reset();
-	// 	submitMSG(true, "Thank you for your submission :)")
-	// }
+		$("#contactForm")[0].reset();
+		submitMSG(true, "Thank you for your submission :)")
+	}
 
 	// function formError(){
 		
@@ -55,19 +55,19 @@ jQuery(window).on('load', function() {
 	// 	$("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 	// 		$(this).removeClass();
 	// 	});
-	// }
+	}
 
-	// function submitMSG(valid, msg){
+	function submitMSG(valid, msg){
 		
-	// 	"use strict";
+		"use strict";
 
-	// 	if(valid){
-	// 		var msgClasses = "success form-message";
-	// 	} else {
-	// 		var msgClasses = "error form-message";
-	// 	}
-	// 	$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-	// }
+		if(valid){
+			var msgClasses = "success form-message";
+		} else {
+			var msgClasses = "error form-message";
+		}
+		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+	}
 
 
 
